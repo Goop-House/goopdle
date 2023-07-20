@@ -1,23 +1,24 @@
-import { ClockIcon, ShareIcon } from '@heroicons/react/outline'
+import { ClockIcon } from '@heroicons/react/outline'
+// import {ShareIcon } from '@heroicons/react/outline'
 import { format } from 'date-fns'
-import Countdown from 'react-countdown'
 
+// import Countdown from 'react-countdown'
 import {
   DATE_LOCALE,
   ENABLE_ARCHIVED_GAMES,
   ENABLE_MIGRATE_STATS,
 } from '../../constants/settings'
 import {
-  ARCHIVE_GAMEDATE_TEXT,
-  GUESS_DISTRIBUTION_TEXT,
-  NEW_WORD_TEXT,
-  SHARE_TEXT,
+  ARCHIVE_GAMEDATE_TEXT, // GUESS_DISTRIBUTION_TEXT,
+  // NEW_WORD_TEXT,
+  // SHARE_TEXT,
   STATISTICS_TITLE,
 } from '../../constants/strings'
 import { GameStats } from '../../lib/localStorage'
-import { shareStatus } from '../../lib/share'
-import { solutionGameDate, tomorrow } from '../../lib/words'
-import { Histogram } from '../stats/Histogram'
+// import { shareStatus } from '../../lib/share'
+import { solutionGameDate } from '../../lib/words'
+// import { tomorrow } from '../../lib/words'
+// import { Histogram } from '../stats/Histogram'
 import { MigrationIntro } from '../stats/MigrationIntro'
 import { StatBar } from '../stats/StatBar'
 import { BaseModal } from './BaseModal'
@@ -43,8 +44,8 @@ type Props = {
 export const StatsModal = ({
   isOpen,
   handleClose,
-  solution,
-  guesses,
+  // solution,
+  // guesses,
   gameStats,
   isLatestGame,
   isGameLost,
@@ -52,11 +53,11 @@ export const StatsModal = ({
   handleShareToClipboard,
   handleShareFailure,
   handleMigrateStatsButton,
-  isHardMode,
-  isDarkMode,
-  isHighContrastMode,
-  numberOfGuessesMade,
-}: Props) => {
+}: // isHardMode,
+// isDarkMode,
+// isHighContrastMode,
+// numberOfGuessesMade,
+Props) => {
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
