@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://db.onlinewebfonts.com/c/d5020e7d1d4ca31ee01e4b5bd613b3e8?family=Aspira+XWide+W01+Medium);
 
 :root {
   --animation-speed: 1000ms;
@@ -79,6 +80,12 @@ svg.cursor-pointer:hover {
 
 .right-icons {
   display: flex;
+}
+
+h1,
+.h1 {
+  font-size: 5.5em;
+  font-family: 'Aspira XWide W01 Medium';
 }
 
 @keyframes revealAbsentCharCell {
