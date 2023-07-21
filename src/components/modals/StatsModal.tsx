@@ -80,7 +80,7 @@ Props) => {
     >
       {/* <StatBar gameStats={gameStats} /> */}
       <h1 className="mt-5 columns-1 items-center items-stretch justify-center text-center dark:text-white sm:mt-10">
-        {'GOOP Day 7/21'}
+        {'GOOP Day\nStream at 10PM EST'}
       </h1>
       {/* <Histogram
         isLatestGame={isLatestGame}
